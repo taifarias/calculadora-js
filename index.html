@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><img src="img/Calculadora-JS-12-06-2024.png" alt="Logo" class="logo"></header>
+
+    
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="keys">
+           
+            <button class="sinal" onclick="calculateSin()">sin</button> <!-- Seno -->
+            <button class="sinal" onclick="calculateCos()">cos</button> <!-- Cosseno -->
+            <button class="sinal" onclick="calculateTan()">tan</button> <!-- Tangente -->
+            <button class="AC"  onclick="clearDisplay()">AC</button>        <!--quando clicar vai chamar a função clearDisplay -->
+           
+            <button class="numeros" onclick="appendNumber('7')">7</button> <!--quando clicar vai chamar a função criada  -->
+            <button class="numeros" onclick="appendNumber('8')">8</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="numeros" onclick="appendNumber('9')">9</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            
+            
+            <button class="sinal" onclick="calculateLog()">log</button> <!-- Logaritmo -->
+            <button class="sinal" onclick="calculateExp()">exp</button> <!-- Exponencial -->
+
+
+            <button class="numeros" onclick="appendNumber('4')">4</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="numeros" onclick="appendNumber('5')">5</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="numeros" onclick="appendNumber('6')">6</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="sinal" onclick="calculateSquareRoot()">√</button> <!-- Raiz Quadrada --> 
+            <button class="sinal" onclick="appendOperator('^')">^</button> <!-- Potenciação -->
+                       
+            
+            <button class="numeros" onclick="appendNumber('1')">1</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="numeros" onclick="appendNumber('2')">2</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button class="numeros" onclick="appendNumber('3')">3</button>  <!--quando clicar vai chamar a função appendNumber  -->
+            <button  class="sinal" onclick="appendOperator('/')">/</button> <!--quando clicar vai chamar a função appendOperator -->
+           
+            <button class="sinal" onclick="calculatePercentage()">%</button> <!-- Porcentagem --> 
+            
+             <button class="numeros" onclick="appendNumber('0')">0</button>  <!--quando clicar vai chamar a função appendNumber  -->
+             <button class="sinal" onclick="appendOperator('+')">+</button>  <!--quando clicar vai chamar a função appendOperator -->
+            <button class="sinal" onclick="appendOperator('-')">-</button>  <!--quando clicar vai chamar a função appendOperator -->
+
+             <button class="sinal" onclick="appendOperator('*')">*</button>  <!--quando clicar vai chamar a função appendOperator -->
+             <button  class="sinal" id="equal" onclick="calculateResult()">=</button>   <!--quando clicar vai chamar a função calculateResult -->
+            
+          
+            
+          
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>Desenvolvido por: t.manyue 2024</footer>
+</body>
+</html>
